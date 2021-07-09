@@ -138,7 +138,7 @@
             <div class="icon-box">
               <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/welding.png')}}"/></i></div>
               <h4><a href="">Welding</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
             </div>
           </div>
 
