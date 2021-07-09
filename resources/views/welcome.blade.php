@@ -105,7 +105,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Programs we offer</h2>
+          <h2>Programs We Offer</h2>
           <p>Magnam dolores commodi suscipit consequatur ex aliquid</p>
         </div>
 
