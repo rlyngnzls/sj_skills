@@ -105,31 +105,39 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>What We Do</h2>
+          <h2>Programs we offer</h2>
           <p>Magnam dolores commodi suscipit consequatur ex aliquid</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
+              <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/old.png')}}"/></i></div>
+              <h4><a href="">Caregiving</a></h4>
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
+              <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/bake.png')}}"/></i></div>
+              <h4><a href="">Baking</a></h4>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
+              <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/cpu.png')}}"/></i></div>
+              <h4><a href="">Electronics</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/welding.png')}}"/></i></div>
+              <h4><a href="">Welding</a></h4>
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
             </div>
           </div>
