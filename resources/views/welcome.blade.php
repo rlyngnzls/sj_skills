@@ -112,7 +112,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
-              <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/old.png')}}"/></i></div>
+              <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/disability.png')}}"/></i></div>
               <h4><a href="">Caregiving</a></h4>
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
