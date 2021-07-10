@@ -167,23 +167,19 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-links">
             <h4>Offered Programs</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Caregiving</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Baking</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Electronics</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Welding</a></li>             
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Welding</a></li>               
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">City Government of San Juan Website</a></li>
             </ul>
           </div>
 
