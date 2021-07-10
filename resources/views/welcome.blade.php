@@ -106,7 +106,7 @@
 
         <div class="section-title">
           <h2>Offered Programs</h2>
-          <p>Magnam dolores commodi suscipit consequatur ex aliquid</p>
+          <p>These are the hehehe</p>
         </div>
 
         <div class="row">
