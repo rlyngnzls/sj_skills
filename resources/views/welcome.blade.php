@@ -140,7 +140,7 @@
               <h4><a href="">Welding</a></h4>
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
             </div>
-          </div>
+          </div>          
 
         </div>
 
@@ -178,13 +178,12 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Offered Programs</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Caregiving</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Baking</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Electronics</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Welding</a></li>             
             </ul>
           </div>
 
@@ -202,9 +201,7 @@
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>       
       </div>
     </div>
   </footer><!-- End Footer -->
