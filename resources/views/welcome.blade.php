@@ -84,6 +84,7 @@
               <li><a href="#">FAQ</a></li>
             </ul>
           </li>
+          <li><a href="#">Login</a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
