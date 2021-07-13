@@ -49,7 +49,7 @@
 
       <nav class="nav-menu d-none d-lg-block ">
         <ul>
-          <li class="active drop-down"><a>News</a>
+          <li class="drop-down"><a>News</a>
             <ul>
               <li><a href="#">Articles</a></li>
               <li><a href="#">Announcements</a></li>
@@ -85,7 +85,7 @@
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
-  
+
   @yield('content')
 
   <!-- ======= Footer ======= -->
