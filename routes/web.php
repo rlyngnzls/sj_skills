@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('pages.index');
 });
+
+//COURSE
+Route::get('/course_welding', 'CourseController@course_welding');

@@ -60,7 +60,7 @@
               <li><a href="#">Caregiving</a></li>
               <li><a href="#">Baking</a></li>
               <li><a href="#">Electronics</a></li>
-              <li><a href="#">Welding</a></li>
+              <li><a href="{{url('/course_welding')}}">Welding</a></li>
             </ul>
           </li>
           <li class="drop-down"><a>Class Schedules</a>
@@ -117,7 +117,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Caregiving</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Baking</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Electronics</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Welding</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{url('/course_welding')}}">Welding</a></li>
             </ul>
           </div>
 
