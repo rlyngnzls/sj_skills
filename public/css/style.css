@@ -1657,3 +1657,8 @@ section {
     opacity: 1;
     left: calc(50% - 15px);
 }
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
