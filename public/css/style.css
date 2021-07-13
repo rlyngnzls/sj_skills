@@ -450,6 +450,189 @@ h1, h2, h3, h4, h5, h6 {
 #care .btn-get-started:hover {
   background: #4ea5e0;
 }
+#baking {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/baking.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+#baking:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#baking .container {
+  z-index: 2;
+}
+
+#baking h1 {
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  text-shadow: 0 0 10px black;
+}
+
+#baking h1 span {
+  border-bottom: 4px solid #3498db;
+}
+
+#baking h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-shadow: 0 0 10px black;
+}
+
+#baking .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #3498db;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px white;
+}
+
+#baking .btn-get-started:hover {
+  background: #4ea5e0;
+}
+
+
+#elec {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/elec.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+#elec:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#elec .container {
+  z-index: 2;
+}
+
+#elec h1 {
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  text-shadow: 0 0 10px black;
+}
+
+#elec h1 span {
+  border-bottom: 4px solid #3498db;
+}
+
+#elec h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-shadow: 0 0 10px black;
+}
+
+#elec .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #3498db;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px white;
+}
+
+#elec .btn-get-started:hover {
+  background: #4ea5e0;
+}
+
+#weld {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/weld.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+#weld:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#weld .container {
+  z-index: 2;
+}
+
+#weld h1 {
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  text-shadow: 0 0 10px black;
+}
+
+#weld h1 span {
+  border-bottom: 4px solid #3498db;
+}
+
+#weld h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-shadow: 0 0 10px black;
+}
+
+#weld .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #3498db;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px white;
+}
+
+#weld .btn-get-started:hover {
+  background: #4ea5e0;
+}
 @media (max-width: 992px) {
   #hero {
     height: calc(100vh - 70px);
