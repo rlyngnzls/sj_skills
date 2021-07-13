@@ -17,7 +17,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Program Outline</h2>
+          <h2>PROGRAM OUTLINE</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
 
@@ -63,7 +63,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
+          <h2>PORTFOLIO</h2>
           <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
         </div>
 
