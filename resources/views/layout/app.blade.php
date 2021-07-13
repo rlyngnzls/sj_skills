@@ -43,8 +43,8 @@
       <div class="logo mr-auto">
         {{-- <h1><a href="index.html">San Juan</a></h1> --}}
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="{{asset('/img/sjc.png')}}" alt="" class="img-fluid"></a>
-        <a href="index.html"><img src="{{asset('/img/makabago.png')}}" alt="" class="img-fluid"></a>
+        <a href="{{url('/')}}"><img src="{{asset('/img/sjc.png')}}" alt="" class="img-fluid"></a>
+        <a href="{{url('/')}}"><img src="{{asset('/img/makabago.png')}}" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block ">
@@ -71,12 +71,7 @@
             </ul>
           </li>
           <li><a href="#">Career/Opportunities</a></li>
-          <li class="drop-down"><a>Gallery</a>
-            <ul>
-              <li><a href="#">Photo</a></li>
-              <li><a href="#">Video</a></li>
-            </ul>
-          </li>
+          <li><a href="{{route('gallery')}}">Gallery</a></li>
           <li class="drop-down"><a>About Us</a>
             <ul>
               <li><a href="#">About the Office</a></li>
