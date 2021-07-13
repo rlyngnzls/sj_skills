@@ -30,7 +30,7 @@
               <img src="{{asset('/img/about.jpg')}}" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0">
-              <h3>Welding</h3>
+              <h3>WELDING</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
@@ -71,9 +71,8 @@
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">New</li>
+              <li data-filter=".filter-card">Old</li>
             </ul>
           </div>
         </div>
@@ -85,7 +84,7 @@
               <figure>
                 <img src="{{asset('/img/portfolio/portfolio-1.jpg')}}" class="img-fluid" alt="">
                 <a href="{{asset('/img/portfolio/portfolio-1.jpg')}}" data-gall="portfolioGallery" class="link-preview venobox" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                
               </figure>
 
               <div class="portfolio-info">
@@ -100,7 +99,7 @@
               <figure>
                 <img src="{{asset('/img/portfolio/portfolio-2.jpg')}}" class="img-fluid" alt="">
                 <a href="{{asset('/img/portfolio/portfolio-2.jpg')}}" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                
               </figure>
 
               <div class="portfolio-info">
@@ -115,7 +114,7 @@
               <figure>
                 <img src="{{asset('/img/portfolio/portfolio-3.jpg')}}" class="img-fluid" alt="">
                 <a href="{{asset('/img/portfolio/portfolio-3.jpg')}}" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                
               </figure>
 
               <div class="portfolio-info">
@@ -130,7 +129,7 @@
               <figure>
                 <img src="{{asset('/img/portfolio/portfolio-4.jpg')}}" class="img-fluid" alt="">
                 <a href="{{asset('/img/portfolio/portfolio-4.jpg')}}" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                
               </figure>
 
               <div class="portfolio-info">
@@ -145,7 +144,7 @@
               <figure>
                 <img src="{{asset('/img/portfolio/portfolio-5.jpg')}}" class="img-fluid" alt="">
                 <a href="{{asset('/img/portfolio/portfolio-5.jpg')}}" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                
               </figure>
 
               <div class="portfolio-info">
@@ -160,7 +159,7 @@
               <figure>
                 <img src="{{asset('/img/portfolio/portfolio-6.jpg')}}" class="img-fluid" alt="">
                 <a href="{{asset('/img/portfolio/portfolio-6.jpg')}}" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                
               </figure>
 
               <div class="portfolio-info">
@@ -175,7 +174,7 @@
               <figure>
                 <img src="{{asset('/img/portfolio/portfolio-7.jpg')}}" class="img-fluid" alt="">
                 <a href="{{asset('/img/portfolio/portfolio-7.jpg')}}" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+               
               </figure>
 
               <div class="portfolio-info">
@@ -190,7 +189,7 @@
               <figure>
                 <img src="{{asset('/img/portfolio/portfolio-8.jpg')}}" class="img-fluid" alt="">
                 <a href="{{asset('/img/portfolio/portfolio-8.jpg')}}" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+               
               </figure>
 
               <div class="portfolio-info">
@@ -205,7 +204,7 @@
               <figure>
                 <img src="{{asset('/img/portfolio/portfolio-9.jpg')}}" class="img-fluid" alt="">
                 <a href="{{asset('/img/portfolio/portfolio-9.jpg')}}" class="link-preview venobox" data-gall="portfolioGallery" title="Preview"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+                
               </figure>
 
               <div class="portfolio-info">
