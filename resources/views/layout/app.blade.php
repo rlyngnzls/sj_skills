@@ -103,11 +103,11 @@
           <div class="col-lg-4 col-md-6 footer-contact">
             <h3>San Juan Skills</h3>
             <p>
-              4th floor Flying V Arena<br>
+              <strong>Address: </strong>4th floor Flying V Arena<br>
               Parking lot, Pinaglabanan St.,<br>
-              Brgy. Corazon De Jesus, San Juan City<br><br>
-              <strong>Phone:</strong> +639998887777<br>
-              <strong>Email:</strong> info@example.com<br>
+              Brgy. Corazon De Jesus, San Juan City<br>
+              <strong>Telephone No.:</strong> 8693-9484<br>
+              <strong>Email:</strong> sltcsanjuan@gmail.com<br>
             </p>
           </div>
 
