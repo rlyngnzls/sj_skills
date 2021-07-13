@@ -4,8 +4,8 @@
 <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left" data-aos="fade-up">
-      <h1>COURSE: <span>ELECTRONICS</span></h1>
-      <h2>Be one of San Juan's talented personalities!</h2>
+      <h1>COURSE: <span>WELDING</span></h1>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
       <a href="#about" class="btn-get-started scrollto">REGISTER NOW</a>
     </div>
   </section><!-- End Hero -->
@@ -40,12 +40,12 @@
               </ul>
               <div class="row icon-boxes">
                 <div class="col-md-6">
-                  <i class="bx bx-cog"></i>
+                  <i class="bx bx-bolt-circle"></i>
                   <h4>Corporis voluptates sit</h4>
                   <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0">
-                  <i class="bx bx-wrench"></i>
+                  <i class="bx bx-network-chart"></i>
                   <h4>Ullamco laboris nisi</h4>
                   <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                 </div>
