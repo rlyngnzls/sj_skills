@@ -108,7 +108,7 @@
 
         <div class="section-title">
           <h2>Offered Programs</h2>
-          <p>These are the hehehe</p>
+          <p>These are programs offered by skills department</p>
         </div>
 
         <div class="row">
