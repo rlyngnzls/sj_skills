@@ -25,7 +25,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/disability.png')}}"/></i></div>
-              <h4><a href="">Caregiving</a></h4>
+              <h4><a href="{{route('caregiving')}}">Caregiving</a></h4>
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
           </div>
@@ -33,7 +33,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
               <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/bake.png')}}"/></i></div>
-              <h4><a href="">Baking</a></h4>
+              <h4><a href="{{route('baking')}}">Baking</a></h4>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
           </div>
@@ -41,7 +41,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/cpu.png')}}"/></i></div>
-              <h4><a href="">Electronics</a></h4>
+              <h4><a href="{{route('electronics')}}">Electronics</a></h4>
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
             </div>
           </div>
@@ -49,7 +49,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/welding.png')}}"/></i></div>
-              <h4><a href="">Welding</a></h4>
+              <h4><a href="{{route('welding')}}">Welding</a></h4>
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
             </div>
           </div>
