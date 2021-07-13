@@ -1,17 +1,17 @@
 @extends('layout.app')
 @section('content')
 <!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+<!-- <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left" data-aos="fade-up">
       <h1>WELCOME TO <span>SAN JUAN SKILLS</span></h1>
       <h2>Be one of San Juan's talented personalities!</h2>
       <a href="#about" class="btn-get-started scrollto">REGISTER NOW</a>
     </div>
-  </section><!-- End Hero -->
+  </section> -->
 <main id="main">
 <!-- ======= Portfolio Section ======= -->
 <section id="portfolio" class="portfolio">
-    <div class="container">
+    <div class="container mt-5">
 
       <div class="section-title">
         <h2>GALLERY</h2>
