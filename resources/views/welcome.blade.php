@@ -160,9 +160,9 @@
           <div class="col-lg-4 col-md-6 footer-contact">
             <h3>San Juan Skills</h3>
             <p>
-              Pinaglabanan Street <br>
-              Brgy. Corazon de Jesus<br>
-              Philippines <br><br>
+              4th floor Flying V Arena<br>
+              Parking lot, Pinaglabanan St.,<br>
+              Brgy. Corazon De Jesus, San Juan City<br><br>
               <strong>Phone:</strong> +639998887777<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
