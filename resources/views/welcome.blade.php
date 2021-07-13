@@ -43,6 +43,7 @@
       <div class="logo mr-auto">
         {{-- <h1><a href="index.html">San Juan</a></h1> --}}
         <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="{{asset('/img/sjc.png')}}" alt="" class="img-fluid"></a>
         <a href="index.html"><img src="{{asset('/img/makabago.png')}}" alt="" class="img-fluid"></a>
       </div>
 
