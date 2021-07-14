@@ -53,7 +53,6 @@
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
             </div>
           </div>
-
         </div>
 
       </div>
