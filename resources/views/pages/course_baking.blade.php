@@ -30,7 +30,7 @@
               <img src="{{asset('/img/aboutbaking.jpg')}}" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0">
-              <h3>BAKING</h3>
+              <h3>BAKING/PASTRY PRODUCTION</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>

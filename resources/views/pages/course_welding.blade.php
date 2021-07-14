@@ -30,7 +30,7 @@
               <img src="{{asset('/img/aboutwelding.jpg')}}" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0">
-              <h3>WELDING</h3>
+              <h3>SHIELDED METAL ARC WELDING</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
