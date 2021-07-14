@@ -63,7 +63,6 @@
               <li><a href="{{route('welding')}}">Shielded Metal Arc Welding</a></li>
               <li><a href="{{route('welding')}}">Basic Food Processing</a></li>
               <li><a href="{{route('welding')}}">Dressmaking NC II</a></li>
-              <li><a href="{{route('welding')}}">Shielded Metal Arc Welding</a></li>
               <li><a href="{{route('welding')}}">Tailoring</a></li>
               <li><a href="{{route('welding')}}">Dishwashing</a></li>
             </ul>
