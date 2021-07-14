@@ -4,7 +4,7 @@
 <!-- ======= Hero Section ======= -->
   <section id="care" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left" data-aos="fade-up">
-      <h1>COURSE: <span>CAREGIVING</span></h1>
+      <h1>COURSE: <span>CAREGIVING NC II</span></h1>
       <h2>Be one of San Juan's talented personalities!</h2>
       <a href="#about" class="btn-get-started scrollto">REGISTER NOW</a>
     </div>
