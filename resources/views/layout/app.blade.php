@@ -84,7 +84,7 @@
         </ul>
       </nav><!-- .nav-menu -->
     </div>
-  </header><!-- End Header -->
+  </header><!-- End Header ha-->
 
   @yield('content')
 
