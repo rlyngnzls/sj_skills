@@ -65,7 +65,12 @@
           </li>
           <li><a href="#">Class Schedules</a></li>
           <li><a href="#">Career/Opportunities</a></li>
-          <li><a href="{{route('gallery')}}">Gallery</a></li>
+          <li class="drop-down"><a>Gallery</a>
+            <ul>
+              <li><a href="{{route('gallery_photo')}}">Photos</a></li>
+              <li><a href="#">Videos</a></li>
+            </ul>
+          </li>
           <li class="drop-down"><a>About Us</a>
             <ul>
               <li><a href="#">About the Office</a></li>
