@@ -57,10 +57,15 @@
           </li>
           <li class="drop-down"><a>Programs</a>
             <ul>
-              <li><a href="{{route('caregiving')}}">Caregiving</a></li>
-              <li><a href="{{route('baking')}}">Baking</a></li>
-              <li><a href="{{route('electronics')}}">Electronics</a></li>
-              <li><a href="{{route('welding')}}">Welding</a></li>
+              <li><a href="{{route('caregiving')}}">Caregiving NC II</a></li>
+              <li><a href="{{route('baking')}}">Baking/Pastry Production</a></li>
+              <li><a href="{{route('electronics')}}">Electronics W/ CCTV Installation</a></li>
+              <li><a href="{{route('welding')}}">Shielded Metal Arc Welding</a></li>
+              <li><a href="{{route('welding')}}">Basic Food Processing</a></li>
+              <li><a href="{{route('welding')}}">Dressmaking NC II</a></li>
+              <li><a href="{{route('welding')}}">Shielded Metal Arc Welding</a></li>
+              <li><a href="{{route('welding')}}">Tailoring</a></li>
+              <li><a href="{{route('welding')}}">Dishwashing</a></li>
             </ul>
           </li>
           <li class="drop-down"><a>Class Schedules</a>
@@ -109,10 +114,14 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Offered Programs</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('caregiving')}}">Caregiving</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('baking')}}">Baking</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('electronics')}}">Electronics</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{route('welding')}}">Welding</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('caregiving')}}">Caregiving NC II</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('baking')}}">Baking/Pastry Production</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('electronics')}}">Electronics E/ CCTV Installation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('welding')}}">Shielded Metal Arc Welding</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('welding')}}">Basic Food Processing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('welding')}}">Dressmaking NC II</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('welding')}}">Tailoring</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('welding')}}">Dishwashing</a></li>
             </ul>
           </div>
 
