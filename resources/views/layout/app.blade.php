@@ -63,13 +63,7 @@
               <li><a href="{{route('welding')}}">Welding</a></li>
             </ul>
           </li>
-          <li class="drop-down"><a>Class Schedules</a>
-            <ul>
-              <li><a href="#">January</a></li>
-              <li><a href="#">February</a></li>
-              <li><a href="#">March</a></li>
-            </ul>
-          </li>
+          <li><a href="#">Class Schedules</a></li>
           <li><a href="#">Career/Opportunities</a></li>
           <li><a href="{{route('gallery')}}">Gallery</a></li>
           <li class="drop-down"><a>About Us</a>
@@ -84,7 +78,7 @@
         </ul>
       </nav><!-- .nav-menu -->
     </div>
-  </header><!-- End Header ha-->
+  </header><!-- End Header -->
 
   @yield('content')
 
