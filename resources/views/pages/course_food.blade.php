@@ -40,12 +40,12 @@
               </ul>
               <div class="row icon-boxes">
                 <div class="col-md-6">
-                  <i class="bx bx-cake"></i>
+                  <i class="bx bx-restaurant"></i>
                   <h4>Corporis voluptates sit</h4>
                   <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0">
-                  <i class="bx bx-dish"></i>
+                  <i class="bx bx-cookie"></i>
                   <h4>Ullamco laboris nisi</h4>
                   <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                 </div>
