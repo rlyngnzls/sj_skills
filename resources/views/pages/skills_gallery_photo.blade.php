@@ -14,7 +14,7 @@
     <div class="container mt-5">
 
       <div class="section-title">
-        <h2>GALLERY</h2>
+        <h2>PHOTO GALLERY</h2>
         <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
       </div>
 

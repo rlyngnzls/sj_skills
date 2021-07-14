@@ -42,7 +42,7 @@
             <div class="icon-box">
               <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/cpu.png')}}"/></i></div>
               <h4><a href="{{route('electronics')}}">Electronics</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
             </div>
           </div>
 
@@ -53,7 +53,6 @@
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
             </div>
           </div>
-
         </div>
 
       </div>

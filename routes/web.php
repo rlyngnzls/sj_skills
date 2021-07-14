@@ -24,4 +24,4 @@ Route::get('/course_caregiving', 'CourseController@course_caregiving') -> name('
 Route::get('/course_electronics', 'CourseController@course_electronics') -> name('electronics');
 
 //GALLERY
-Route::get('/skills_gallery', 'GalleryController@skills_gallery') -> name('gallery');
+Route::get('/skills_gallery_photo', 'GalleryController@skills_gallery_photo') -> name('gallery_photo');
