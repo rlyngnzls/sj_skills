@@ -15,9 +15,9 @@
     </div>
   </section><!-- End Hero --> -->
 
-  <main id="main">
+<main id="main">
 
-    <div id="demo" class="carousel slide" data-ride="carousel">
+<div id="demo" class="carousel slide" data-ride="carousel" style="margin-top:54px;">
   <ul class="carousel-indicators">
     <li data-target="#demo" data-slide-to="0" class="active"></li>
     <li data-target="#demo" data-slide-to="1"></li>
@@ -26,28 +26,28 @@
   </ul>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{{asset('/img/care.jpg')}}" alt="Los Angeles" width="1100" height="500">
+      <img src="{{asset('/img/care.jpg')}}" alt="care" width="100%" height="100%">
       <div class="carousel-caption">
         <h3></h3>
         <p></p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{{asset('/img/slidebake.jpg')}}" alt="Chicago" width="1100" height="500">
+      <img src="{{asset('/img/slidebake.jpg')}}" alt="bake" width="100%" height="100%">
       <div class="carousel-caption">
         <h3></h3>
         <p></p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{{asset('/img/slideelec.jpg')}}" alt="New York" width="1100" height="500">
+      <img src="{{asset('/img/slideelec.jpg')}}" alt="elec" width="100%" height="100%">
       <div class="carousel-caption">
         <h3></h3>
         <p></p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{{asset('/img/slidewelding.jpg')}}" alt="New York" width="1100" height="500">
+      <img src="{{asset('/img/slidewelding.jpg')}}" alt="welding" width="100%" height="100%">
       <div class="carousel-caption">
         <h3></h3>
         <p></p>
