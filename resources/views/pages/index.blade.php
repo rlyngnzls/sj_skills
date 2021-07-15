@@ -59,7 +59,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/meat-grinder.svg')}}"/></i></div>
-              <h4><a href="{{route('caregiving')}}">Basic Food Processing</a></h4>
+              <h4><a href="{{route('food')}}">Basic Food Processing</a></h4>
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
           </div>
@@ -67,7 +67,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
               <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/mannequin.svg')}}"/></i></div>
-              <h4><a href="{{route('baking')}}">Dressmaking NC II</a></h4>
+              <h4><a href="{{route('dressmaking')}}">Dressmaking NC II</a></h4>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
           </div>
@@ -75,7 +75,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/suit.svg')}}"/></i></div>
-              <h4><a href="{{route('electronics')}}">Tailoring</a></h4>
+              <h4><a href="{{route('tailoring')}}">Tailoring</a></h4>
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
             </div>
           </div>
@@ -83,7 +83,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i><img style=" width:100%; "src="{{asset('img/icons/dishwashing.svg')}}"/></i></div>
-              <h4><a href="{{route('welding')}}">Dishwashing</a></h4>
+              <h4><a href="{{route('dishwashing')}}">Dishwashing</a></h4>
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
             </div>
           </div>
