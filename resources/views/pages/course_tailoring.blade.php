@@ -2,7 +2,7 @@
 @section('content')
 
 <!-- ======= Hero Section ======= -->
-  <section id="baking" class="d-flex flex-column justify-content-center align-items-center">
+  <section id="tailor" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left" data-aos="fade-up">
       <h1>COURSE: <span>TAILORING</span></h1>
       <h2>Be one of San Juan's talented personalities!</h2>

@@ -633,6 +633,251 @@ h1, h2, h3, h4, h5, h6 {
 #weld .btn-get-started:hover {
   background: #4ea5e0;
 }
+
+#dress {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/dress.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+#dress:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#dress .container {
+  z-index: 2;
+}
+
+#dress h1 {
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  text-shadow: 0 0 10px black;
+}
+
+#dress h1 span {
+  border-bottom: 4px solid #3498db;
+}
+
+#dress h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-shadow: 0 0 10px black;
+}
+
+#dress .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #3498db;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px white;
+}
+
+#dress .btn-get-started:hover {
+  background: #4ea5e0;
+}
+
+#dish {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/dishwashing.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+#dish:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#dish .container {
+  z-index: 2;
+}
+
+#dish h1 {
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  text-shadow: 0 0 10px black;
+}
+
+#dish h1 span {
+  border-bottom: 4px solid #3498db;
+}
+
+#dish h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-shadow: 0 0 10px black;
+}
+
+#dish .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #3498db;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px white;
+}
+
+#dish .btn-get-started:hover {
+  background: #4ea5e0;
+}
+
+#tailor {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/tailor.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+#tailor:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#tailor .container {
+  z-index: 2;
+}
+
+#tailor h1 {
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  text-shadow: 0 0 10px black;
+}
+
+#tailor h1 span {
+  border-bottom: 4px solid #3498db;
+}
+
+#tailor h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-shadow: 0 0 10px black;
+}
+
+#tailor .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #3498db;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px white;
+}
+
+#tailor .btn-get-started:hover {
+  background: #4ea5e0;
+}
+
+#food {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/foodp.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+#food:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#food .container {
+  z-index: 2;
+}
+
+#food h1 {
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  text-shadow: 0 0 10px black;
+}
+
+#food h1 span {
+  border-bottom: 4px solid #3498db;
+}
+
+#food h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-shadow: 0 0 10px black;
+}
+
+#food .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #3498db;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px white;
+}
+
+#food .btn-get-started:hover {
+  background: #4ea5e0;
+}
+
 @media (max-width: 992px) {
   #hero {
     height: calc(100vh - 70px);
@@ -650,6 +895,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # Sections General
