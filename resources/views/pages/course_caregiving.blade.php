@@ -41,13 +41,17 @@
               <div class="row icon-boxes">
                 <div class="col-md-6">
                   <i class="bx bx-donate-heart"></i>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <h4>Class Schedule:</h4>
+                  <p>6 months (786 hours) <br> Monday-Friday (8:00 am - 2:00 pm)</p>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0">
                   <i class="bx bx-book-heart"></i>
-                  <h4>Ullamco laboris nisi</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <h4>Requirements:</h4>
+                  <p>3 pcs 1x1 picture with name
+                  <br> Voter's ID/Stub
+                  <br> TOR/College Diploma
+                  <br> High School Diploma
+                  <br> Birth/Marriage Certificate</p>
                 </div>
               </div>
             </div>
