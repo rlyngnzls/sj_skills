@@ -6,7 +6,7 @@
     <div class="container text-center text-md-left" data-aos="fade-up">
       <h1>COURSE: <span>BASIC FOOD PROCESSING</span></h1>
       <h2>Be one of San Juan's talented personalities!</h2>
-      <a href="#about" class="btn-get-started scrollto">REGISTER NOW</a>
+      <a href="{{route('registerskills')}}" class="btn-get-started scrollto">REGISTER NOW</a>
     </div>
   </section><!-- End Hero -->
 

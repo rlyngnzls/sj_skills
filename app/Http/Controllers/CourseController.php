@@ -37,4 +37,9 @@ class CourseController extends Controller
     public function course_dishwashing(){
         return view('pages.course_dishwashing');
     }
+
+    public function registrationskills()
+    {
+        return view('pages.registrationskills');
+    }
 }

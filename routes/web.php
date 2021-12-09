@@ -26,6 +26,7 @@ Route::get('/course_food', 'CourseController@course_food') -> name('food');
 Route::get('/course_dressmaking', 'CourseController@course_dressmaking') -> name('dressmaking');
 Route::get('/course_tailoring', 'CourseController@course_tailoring') -> name('tailoring');
 Route::get('/course_dishwashing', 'CourseController@course_dishwashing') -> name('dishwashing');
+Route::get('/registrationskills', 'CourseController@registrationskills') -> name('registerskills');
 
 
 //GALLERY
