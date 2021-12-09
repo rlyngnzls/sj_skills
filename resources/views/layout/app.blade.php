@@ -45,6 +45,7 @@
         <!-- Uncomment below if you prefer to use an image logo -->
         <a href="{{url('/')}}"><img src="{{asset('/img/sjc.png')}}" alt="" class="img-fluid"></a>
         <a href="{{url('/')}}"><img src="{{asset('/img/makabago.png')}}" alt="" class="img-fluid"></a>
+        <a href="{{url('/')}}"><img style="width:90px;" src="{{asset('/img/skillslogo.png')}}" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block ">
@@ -78,9 +79,7 @@
           </li>
           <li class="drop-down"><a>About Us</a>
             <ul>
-              <li><a href="#">About the Office</a></li>
-              <li><a href="#">Mission & Vision</a></li>
-              <li><a href="#">Organizational Chart</a></li>
+              <li><a href="{{route('aboutus')}}">About the Office</a></li>
               <li><a href="#">FAQ</a></li>
             </ul>
           </li>

@@ -27,12 +27,13 @@ Route::get('/course_dressmaking', 'CourseController@course_dressmaking') -> name
 Route::get('/course_tailoring', 'CourseController@course_tailoring') -> name('tailoring');
 Route::get('/course_dishwashing', 'CourseController@course_dishwashing') -> name('dishwashing');
 Route::get('/registrationskills', 'CourseController@registrationskills') -> name('registerskills');
-
+Route::get('/aboutus_page', 'CourseController@aboutus') -> name('aboutus');
 
 //GALLERY
 Route::get('/skills_gallery_photo', 'GalleryController@skills_gallery_photo') -> name('gallery_photo');
 Auth::routes();
 
 Route::get('user/home', 'HomeController@userHome')->name('user.home');
+
 
 Route::get('admin/home', 'HomeController@adminHome')->name('admin.home')->middleware('is_admin');

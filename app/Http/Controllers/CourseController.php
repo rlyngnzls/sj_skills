@@ -42,4 +42,10 @@ class CourseController extends Controller
     {
         return view('pages.registrationskills');
     }
+
+    public function aboutus()
+    {
+        return view('aboutus.aboutus_page');
+    }
+
 }
