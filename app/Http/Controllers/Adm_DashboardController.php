@@ -4,11 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-<<<<<<< Updated upstream:app/Http/Controllers/HomeController.php
-class HomeController extends Controller
-=======
 class Adm_DashboardController extends Controller
->>>>>>> Stashed changes:app/Http/Controllers/Adm_DashboardController.php
 {
     /**
      * Create a new controller instance.
@@ -25,7 +21,6 @@ class Adm_DashboardController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-<<<<<<< Updated upstream:app/Http/Controllers/HomeController.php
     public function userHome()
     {
         return view('user.userHome');
@@ -36,16 +31,11 @@ class Adm_DashboardController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-=======
->>>>>>> Stashed changes:app/Http/Controllers/Adm_DashboardController.php
     public function adminHome()
     {
         return view('admin.adminHome');
     }
-<<<<<<< Updated upstream:app/Http/Controllers/HomeController.php
   
 
 
-=======
->>>>>>> Stashed changes:app/Http/Controllers/Adm_DashboardController.php
 }
