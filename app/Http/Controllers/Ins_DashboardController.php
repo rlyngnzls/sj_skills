@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class Ins_DashboardController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -15,27 +15,14 @@ class HomeController extends Controller
     {
         $this->middleware('auth');
     }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function userHome()
-    {
-        return view('user.userHome');
-    }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function adminHome()
-    {
-        return view('admin.adminHome');
-    }
   
-
-
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function instructorHome()
+    {
+        return view('instructor.instructorHome');
+    }
 }
