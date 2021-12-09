@@ -36,7 +36,7 @@
             <img src="{{asset('/img/sklogo.png')}}"style="width:30%;" />
             <form action="/action_page.php">
               <input type="file" id="myFile" name="filename">
-            </form>
+            
           </div>
         </div>
         <div class="row">
@@ -62,9 +62,9 @@
             <p style="text-align: left;  text-indent: 30px;">2.1 Name</p>
           </div>
           <div class="col-7">
-            <input type="text" class="form-control" placeholder="Last Name, Extension Name (Jr., Sr)" required name="name"><br>
-            <input type="text" class="form-control" placeholder="First Name" required name="name"><br>
-            <input type="text" class="form-control" placeholder="Middle Name" required name="name">
+            <input type="text" class="form-control" placeholder="Last Name, Extension Name (Jr., Sr)" required name="lname"><br>
+            <input type="text" class="form-control" placeholder="First Name" required name="fname"><br>
+            <input type="text" class="form-control" placeholder="Middle Name" required name="mname">
           </div>
         </div>
 
@@ -73,12 +73,12 @@
             <p style="text-align: left;  text-indent: 30px;">2.2 Complete Permanent Mailing Address</p>
           </div>
           <div class="col-4">
-            <input type="text" class="form-control" placeholder="Number, Street" required name="name"><br>
-            <input type="text" class="form-control" placeholder="District" required name="name"><br>
+            <input type="text" class="form-control" placeholder="Number, Street" required name="street"><br>
+            <input type="text" class="form-control" placeholder="District" required name="district"><br>
           </div>
           <div class="col-3">
-            <input type="text" class="form-control" placeholder="Barangay" required name="name"><br>
-            <input type="text" class="form-control" placeholder="City/Municipality" required name="name"><br>
+            <input type="text" class="form-control" placeholder="Barangay" required name="brgy"><br>
+            <input type="text" class="form-control" placeholder="City/Municipality" required name="city"><br>
           </div>
           <div class="col-12">
             <div class="row">
@@ -86,13 +86,13 @@
                   <!-- for spacing -->
               </div>
               <div class="col-3">
-                <input type="text" class="form-control" placeholder="Email Address/Facebook Account" required name="name">
+                <input type="text" class="form-control" placeholder="Email Address/Facebook Account" required name="email">
               </div>
               <div class="col-2">
-                <input type="text" class="form-control" placeholder="Contact No." required name="name">
+                <input type="text" class="form-control" placeholder="Contact No." required name="contact_no">
               </div>
               <div class="col-2">
-                <input type="text" class="form-control" placeholder="Nationality" required name="name">
+                <input type="text" class="form-control" placeholder="Nationality" required name="nationality">
               </div>
             </div>
             <br>
@@ -119,19 +119,19 @@
           <div class="col-4" style="border-right: solid;">
               <p style="text-align: left;  text-indent: 30px;">3.2 Civil Status</p><br>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Single" id="" required value="Single">
+                <input class="form-check-input" type="radio" name="CivStat" id="" required value="Single">
                 <label class="form-check-label" for="category1">Single</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Widow" id="" required value="Widow">
+                <input class="form-check-input" type="radio" name="CivStat" id="" required value="Widow">
                 <label class="form-check-label" for="category1">Widow</label>
               </div><br>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Married" id="" required value="Married">
+                <input class="form-check-input" type="radio" name="CivStat" id="" required value="Married">
                 <label class="form-check-label" for="category1">Married</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Separated" id="" required value="Separated">
+                <input class="form-check-input" type="radio" name="CivStat" id="" required value="Separated">
                 <label class="form-check-label" for="category1">Separated</label>
               </div>
           </div>
@@ -139,30 +139,30 @@
               <p style="text-align: left;  text-indent: 30px;">3.3 Employment Status</p><br>
               <div class="no" style="text-align: left;">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="Employed" id="" required value="Employed">
+                  <input class="form-check-input" type="radio" name="EmpStat" id="" required value="Employed">
                   <label class="form-check-label" for="category1">Employed</label>
                 </div><br>&nbsp&nbsp&nbsp
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="EmpTag" id="" required value="Permanent/Regular" disabled>
+                    <label class="form-check-label" for="category1">Permanent/Regular</label>
+                  </div><br>&nbsp&nbsp&nbsp
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="EmpTag" id="" required value="Job Order" disabled>
+                    <label class="form-check-label" for="category1">Job Order</label>
+                  </div><br>&nbsp&nbsp&nbsp
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="EmpTag" id="" required value="Contractual" disabled>
+                    <label class="form-check-label" for="category1">Contractual</label>
+                  </div><br>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="Permanent/Regular" id="" required value="Permanent/Regular">
-                  <label class="form-check-label" for="category1">Permanent/Regular</label>
-                </div><br>&nbsp&nbsp&nbsp
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="Job Order" id="" required value="Job Order">
-                  <label class="form-check-label" for="category1">Job Order</label>
-                </div><br>&nbsp&nbsp&nbsp
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="Contractual" id="" required value="Contractual">
-                  <label class="form-check-label" for="category1">Contractual</label>
-                </div><br>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="Employed" id="" required value="Unemployed">
+                  <input class="form-check-input" type="radio" name="EmpStat" id="" required value="Unemployed">
                   <label class="form-check-label" for="category1">Unemployed</label>
                 </div><br>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="Self-employed" id="" required value="Self-employed">
+                  <input class="form-check-input" type="radio" name="EmpStat" id="" required value="Self-employed">
                   <label class="form-check-label" for="category1">Self-employed</label>
                 </div>
-                <input type="text" class="form-control" disabled="disabled" placeholder="Nature of Business" required name="natureofbusiness"><br>
+                <input type="text" class="form-control" disabled="disabled" placeholder="Nature of Business" required name="NatureBusiness"><br>
               </div>
           </div>
         </div>
@@ -171,13 +171,27 @@
             <p style="font-size: 20px; text-align: left;  text-indent: 30px;">3.4 Birthdate</p>
           </div>
           <div class="col-3">
-            <input type="text" class="form-control" placeholder="Month of Birth" required name="monthfobirth">
+            <select class="form-control" required name="monthfobirth">
+              <option disabled selected>Month of Birth</option>
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
           </div>
           <div class="col-2">
-            <input type="text" class="form-control" placeholder="Day of Birth" required name="dayofbirth">
+            <input type="number" class="form-control" placeholder="Day of Birth" required name="dayofbirth" min="1" max="31">
           </div>
           <div class="col-2">
-            <input type="text" class="form-control" placeholder="Year of Birth" required name="yearofbirth">
+            <input type="number" class="form-control" placeholder="Year of Birth" required name="yearofbirth" min="1900">
           </div>
           <div class="col-1">
             <input type="text" class="form-control" placeholder="Age" required name="age">
@@ -207,25 +221,25 @@
             <div class="row" style=" border-bottom: solid;">
               <div class="col-4" style="border-right: solid;">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="nogradecom" id="" required value="nogradecom">
+                  <input class="form-check-input" type="radio" name="EducAttain" id="" required value="nogradecom">
                   <label class="form-check-label" for="category1">No Grade Completed</label>
                 </div>
               </div>
               <div class="col-3" style="border-right: solid;">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="elemgrad" id="" required value="elemgrad">
+                  <input class="form-check-input" type="radio" name="EducAttain" id="" required value="elemgrad">
                   <label class="form-check-label" for="category1">Elementary Graduate</label>
                 </div>
               </div>
               <div class="col-3" style="border-right: solid;">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="elemundergrad" id="" required value="elemundergrad">
+                  <input class="form-check-input" type="radio" name="EducAttain" id="" required value="elemundergrad">
                   <label class="form-check-label" for="category1">Elementary Undergraduate</label>
                 </div>
               </div>
               <div class="col-2">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="collegeundergrad" id="" required value="collegeundergrad">
+                  <input class="form-check-input" type="radio" name="EducAttain" id="" required value="collegeundergrad">
                   <label class="form-check-label" for="category1">College Undergraduate</label>
                 </div>
               </div>
@@ -234,19 +248,19 @@
             <div class="row" style=" border-bottom: solid;">
               <div class="col-4" style="border-right: solid;">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="hsgrad" id="" required value="hsgrad">
+                  <input class="form-check-input" type="radio" name="EducAttain" id="" required value="hsgrad">
                   <label class="form-check-label" for="category1">High School Graduate</label>
                 </div>
               </div>
               <div class="col-3" style="border-right: solid;">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="hsundergrad" id="" required value="hsundergrad">
+                  <input class="form-check-input" type="radio" name="EducAttain" id="" required value="hsundergrad">
                   <label class="form-check-label" for="category1">High School Graduate Undergraduate</label>
                 </div>
               </div>
               <div class="col-3" style="border-right: solid;">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="collegegrad" id="" required value="collegegrad">
+                  <input class="form-check-input" type="radio" name="EducAttain" id="" required value="collegegrad">
                   <label class="form-check-label" for="category1">College Graduate</label>
                 </div>
               </div>
@@ -272,28 +286,28 @@
               <div class="col-8" style="border-right: solid; border-bottom: solid;">
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="Student" id="" required value="Student">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Student">
                     <label class="form-check-label" for="category1">Student</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="infowork" id="" required value="infowork">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="infowork">
                     <label class="form-check-label" for="category1">Informal Worker</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="outstudent" id="" required value="outstudent">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="outstudent">
                     <label class="form-check-label" for="category1">Out-of-Student Youth</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="induswork" id="" required value="induswork">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="induswork">
                     <label class="form-check-label" for="category1">Industry Worker</label>
                   </div>
                 </div>
               </div>
               <div class="col-4" style="border-bottom: solid;">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="indi" id="" required value="indi">
+                  <input class="form-check-input" type="radio" name="ClientClass" id="" required value="indi">
                   <label class="form-check-label" for="category1">Indigenous People & Cultural Communities </label>
                 </div>
               </div>
@@ -301,18 +315,18 @@
               <div class="col-8" style="border-right: solid; border-bottom: solid;">
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="soloparent" id="" required value="soloparent">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="soloparent">
                     <label class="form-check-label" for="category1">Solo Parent</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cooperatives" id="" required value="cooperatives">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="cooperatives">
                     <label class="form-check-label" for="category1">Cooperatives</label>
                   </div>
                 </div>
               </div>
               <div class="col-4" style="border-bottom: solid;">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="victims" id="" required value="victims">
+                  <input class="form-check-input" type="radio" name="ClientClass" id="" required value="victims">
                   <label class="form-check-label" for="category1">Victims of Survivor of Human Trafficking </label>
                 </div>
               </div>
@@ -320,28 +334,28 @@
               <div class="col-8" style="border-right: solid; border-bottom: solid;">
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="solo" id="" required value="solo">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="solo">
                     <label class="form-check-label" for="category1">Solo Parent's Children</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="famenter" id="" required value="famenter">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="famenter">
                     <label class="form-check-label" for="category1">Family Enterprises</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="unifper" id="" required value="unifper">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="unifper">
                     <label class="form-check-label" for="category1">Uniformed Personnel</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="fammicro" id="" required value="fammicro">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="fammicro">
                     <label class="form-check-label" for="category1">Family Members of Microentrepreneurs</label>
                   </div>
                 </div>
               </div>
               <div class="col-4" style="border-bottom: solid;" >
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="indi" id="" required value="indi">
+                  <input class="form-check-input" type="radio" name="ClientClass" id="" required value="indi">
                   <label class="form-check-label" for="category1">Victims of Natural Disasters and
                          Calamities
                   </label>
@@ -351,18 +365,18 @@
             <div class="col-8" style="border-right: solid; border-bottom: solid;">
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="lgunits" id="" required value="lgunits">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="lgunits">
                     <label class="form-check-label" for="category1">Local Government Units (CTECs)</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="farmfish" id="" required value="farmfish">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="farmfish">
                     <label class="form-check-label" for="category1">Farmers and Fishermen</label>
                   </div>
                 </div>
               </div>
               <div class="col-4" style="border-bottom: solid;">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="drugdepen" id="" required value="drugdepen">
+                  <input class="form-check-input" type="radio" name="ClientClass" id="" required value="drugdepen">
                   <label class="form-check-label" for="category1">Drug Dependent Surrenderers /
                          Surrenderees
                   </label>
@@ -372,24 +386,24 @@
               <div class="col-8" style="border-right: solid; border-bottom: solid;">
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="displaced" id="" required value="displaced">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="displaced">
                     <label class="form-check-label" for="category1">Displaced HEIs Teaching Personnel</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="famfarmfish" id="" required value="famfarmfish">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="famfarmfish">
                     <label class="form-check-label" for="category1">Family Members of Farmers and Fishermen</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="informal" id="" required value="informal">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="informal">
                     <label class="form-check-label" for="category1">Informal Settler</label>
                   </div>
                 </div>
               </div>
               <div class="col-4" style="border-bottom: solid;" >
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="rebel" id="" required value="rebel">
+                  <input class="form-check-input" type="radio" name="ClientClass" id="" required value="rebel">
                   <label class="form-check-label" for="category1">Rebel Returnees or Decommissioned
                          Combatants
                   </label>
@@ -399,28 +413,28 @@
               <div class="col-8" style="border-right: solid; border-bottom: solid;">
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="displacedworkers" id="" required value="displacedworkers">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="displacedworkers">
                     <label class="form-check-label" for="category1">Displaced Workers</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="employedworkers" id="" required value="employedworkers ">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="employedworkers ">
                     <label class="form-check-label" for="category1">Currently Employed Workers</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="fisherfolks" id="" required value="fisherfolks">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="fisherfolks">
                     <label class="form-check-label" for="category1">Fisherfolks</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="comm" id="" required value="comm">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="comm">
                     <label class="form-check-label" for="category1">Community Training & Employment Coordinator </label>
                   </div>
                 </div>
               </div>
               <div class="col-4" style="border-bottom: solid;" >
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inmates" id="" required value="inmates">
+                  <input class="form-check-input" type="radio" name="ClientClass" id="" required value="inmates">
                   <label class="form-check-label" for="category1">Inmates and Detainees</label>
                 </div>
               </div>
@@ -428,34 +442,34 @@
               <div class="col-8" style="border-right: solid; border-bottom: solid;">
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="emp" id="" required value="emp">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="emp">
                     <label class="form-check-label" for="category1">Employees w/ Contractual/Job Order
                            Status
                     </label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="4p" id="" required value="4p ">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="4p ">
                     <label class="form-check-label" for="category1">4ps Beneficiary</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tvet" id="" required value="tvet">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="tvet">
                     <label class="form-check-label" for="category1">TVET Trainers</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ofw" id="" required value="ofw">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="ofw">
                     <label class="form-check-label" for="category1">Returning/repatriated OFWs </label>
                   </div>
                 </div>
               </div>
               <div class="col-4" style="border-bottom: solid;" >
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="wounded" id="" required value="wounded">
+                  <input class="form-check-input" type="radio" name="ClientClass" id="" required value="wounded">
                   <label class="form-check-label" for="category1">Wounded-in-Action AFP & PNP Personnel</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="fammem" id="" required value="fammem">
+                  <input class="form-check-input" type="radio" name="ClientClass" id="" required value="fammem">
                   <label class="form-check-label" for="category1">Family Members of AFP & PNP Wounded-
                          in-Action
                   </label>
@@ -465,32 +479,32 @@
               <div class="col-8" style="border-right: solid; border-bottom: solid;">
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="urbanrural" id="" required value="urbanrural">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="urbanrural">
                     <label class="form-check-label" for="category1">Urban and Rural Poor</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ofwdept" id="" required value="ofwdept">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="ofwdept">
                     <label class="form-check-label" for="category1">OFW Dependent</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="agrreform" id="" required value="agrreform">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="agrreform">
                     <label class="form-check-label" for="category1">Agrarian Reform Beneficiary</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="msme" id="" required value="msme">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="msme">
                     <label class="form-check-label" for="category1">MSMEs</label>
                   </div>
                 </div>
               </div>
               <div class="col-4" style="border-bottom: solid;" >
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="fammemdetain" id="" required value="fammemdetain">
+                  <input class="form-check-input" type="radio" name="ClientClass" id="" required value="fammemdetain">
                   <label class="form-check-label" for="category1">Family Members of Inmates and Detainees</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="uniperson" id="" required value="uniperson">
+                  <input class="form-check-input" type="radio" name="ClientClass" id="" required value="uniperson">
                   <label class="form-check-label" for="category1">Uniformed Personnel</label>
                 </div>
               </div>
@@ -498,11 +512,11 @@
               <div class="col-8" style="border-right: solid;">
                 <div class="col-12">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="rcefresp" id="" required value="rcefresp">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="rcefresp">
                     <label class="form-check-label" for="category1">RCEF - RESP</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="afppnp" id="" required value="afppnp">
+                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="afppnp">
                     <label class="form-check-label" for="category1">Family Members of AFP & PNP Killed-in  Action</label>
                   </div>
                 </div>
@@ -512,7 +526,7 @@
               </div>
               <div class="col-4">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="wounded" id="" required value="wounded">
+                  <input class="form-check-input" type="radio" name="ClientClass" id="" required value="wounded">
                   <label class="form-check-label" for="category1">Victims of Human Rights or their
                          Authorized Beneficiaries
                   </label>
@@ -530,19 +544,19 @@
           <div class="row" style=" border-bottom: solid;">
             <div class="col-4" style=" border-right: solid;">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="menintellec" id="" required value="menintellec">
+                <input class="form-check-input" type="radio" name="TOD" id="" required value="menintellec">
                 <label class="form-check-label" for="category1">Mental/Intellectual</label>
               </div>
             </div>
             <div class="col-4"  style=" border-right: solid;">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="visualdis" id="" required value="visualdis">
+                <input class="form-check-input" type="radio" name="TOD" id="" required value="visualdis">
                 <label class="form-check-label" for="category1">Visual Disability</label>
               </div>
             </div>
             <div class="col-4">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="ortho" id="" required value="ortho">
+                <input class="form-check-input" type="radio" name="TOD" id="" required value="ortho">
                 <label class="form-check-label" for="category1">Orthopedic (Musculoskeletal) Disability</label>
               </div>
             </div>
@@ -551,19 +565,19 @@
           <div class="row" style=" border-bottom: solid;">
             <div class="col-4" style=" border-right: solid;">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="hearing" id="" required value="hearing">
+                <input class="form-check-input" type="radio" name="TOD" id="" required value="hearing">
                 <label class="form-check-label" for="category1">Hearing Disability</label>
               </div>
             </div>
             <div class="col-4"  style=" border-right: solid;">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="speech" id="" required value="speech">
+                <input class="form-check-input" type="radio" name="TOD" id="" required value="speech">
                 <label class="form-check-label" for="category1">Speech Impairment</label>
               </div>
             </div>
             <div class="col-4">
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="multi" id="" required value="multi">
+                <input class="form-check-input" type="radio" name="TOD" id="" required value="multi">
                 <label class="form-check-label" for="category1">Multiple Disabilities, specify  ____________</label>
               </div>
             </div>
@@ -572,19 +586,19 @@
           <div class="row" style=" border-bottom: solid;">
           <div class="col-4" style=" border-right: solid;">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="psycho" id="" required value="psycho">
+              <input class="form-check-input" type="radio" name="TOD" id="" required value="psycho">
               <label class="form-check-label" for="category1">Psychosocial Disability</label>
             </div>
           </div>
           <div class="col-4"  style=" border-right: solid;">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="chronic" id="" required value="chronic">
+              <input class="form-check-input" type="radio" name="TOD" id="" required value="chronic">
               <label class="form-check-label" for="category1">Disability Due to Chronic Illness</label>
             </div>
           </div>
           <div class="col-4">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="learning" id="" required value="learning">
+              <input class="form-check-input" type="radio" name="TOD" id="" required value="learning">
               <label class="form-check-label" for="category1">Learning Disability</label>
             </div>
           </div>
@@ -592,26 +606,26 @@
 
         <div class="row">
           <div class="col-12" style=" border-bottom: solid; padding: 5px;">
-            <h4 style="color:blue; text-align: left; font-weight:900;">6. Causes of Disability (forPersons with Disability Only)</h4>
+            <h4 style="color:blue; text-align: left; font-weight:900;">6. Causes of Disability (for Persons with Disability Only)</h4>
           </div>
         </div>
 
         <div class="row" style=" border-bottom: solid;">
           <div class="col-4" style=" border-right: solid;">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="congeinborn" id="" required value="congeinborn">
+              <input class="form-check-input" type="radio" name="COD" id="" required value="congeinborn">
               <label class="form-check-label" for="category1">Congenital/Inborn</label>
             </div>
           </div>
           <div class="col-4"  style=" border-right: solid;">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="illness" id="" required value="illness">
+              <input class="form-check-input" type="radio" name="COD" id="" required value="illness">
               <label class="form-check-label" for="category1">Illness</label>
             </div>
           </div>
           <div class="col-4">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="injury" id="" required value="injury">
+              <input class="form-check-input" type="radio" name="COD" id="" required value="injury">
               <label class="form-check-label" for="category1">Injury</label>
             </div>
           </div>
@@ -623,13 +637,13 @@
           </div>
           <div class="col-2" style=" border-bottom: solid; padding: 5px; border-right: solid;">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="injury" id="" required value="injury">
+              <input class="form-check-input" type="radio" name="NCAE" id="" required value="YES">
               <label class="form-check-label" for="category1">Yes</label>
             </div>
           </div>
           <div class="col-2" style=" border-bottom: solid; padding: 5px;">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="injury" id="" required value="injury">
+              <input class="form-check-input" type="radio" name="NCAE" id="" required value="NO">
               <label class="form-check-label" for="category1">No</label>
             </div>
           </div>
@@ -637,8 +651,8 @@
         <br>
         <div class="row" style=" border-bottom: solid;">
           <div class="col-8">
-            <input type="text" class="form-control" placeholder="When:" required name="name"><br>
-            <input type="text" class="form-control" placeholder="Where:" required name="name"><br>
+            <input type="text" class="form-control" placeholder="When:" required name="when"><br>
+            <input type="text" class="form-control" placeholder="Where:" required name="where"><br>
           </div>
         </div>
 
@@ -719,9 +733,35 @@
         </div>
 
 
-
+      </form>
         </div>
       </div>
 </section><!-- End Portfolio Section -->
 </main><!-- End #main -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    //Employment Status
+    $('input:radio[name="EmpStat"]').change(function() {
+        if (this.value == 'Employed') {
+          $('input:radio[name="EmpTag"]').attr("disabled",false);
+          $('input[name="NatureBusiness"]').attr("disabled",true);
+          $('input[name="NatureBusiness"]').val("");
+        }
+        else if (this.value == 'Unemployed') {
+          $('input:radio[name="EmpTag"]').attr("disabled",true);
+          $('input[name="NatureBusiness"]').attr("disabled",true);
+          $('input:radio[name="EmpTag"]').prop('checked', false);
+          $('input[name="NatureBusiness"]').val("");
+        }
+        else if (this.value == 'Self-employed') {
+          $('input:radio[name="EmpTag"]').attr("disabled",true);
+          $('input[name="NatureBusiness"]').attr("disabled",false);
+          $('input:radio[name="EmpTag"]').prop('checked', false);
+        }
+    });   
+
+  });
+</script>
 @endsection
