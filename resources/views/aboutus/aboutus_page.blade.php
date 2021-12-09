@@ -27,6 +27,7 @@
           <i class="fa fa-phone" style="font-size:24px;">  286939464</i><br>
           <i class="fa fa-envelope" style="font-size:24px;"> <a href="mailto:sltcsanjuan@gmail.com">sltcsanjuan@gmail.com</a></i><br>
           <i class="fa fa-facebook" style="font-size:24px;"> <a href="https://www.facebook.com/skillstrainingsanjuancity/?ref=page_internal">@skillstrainingsanjuancity</a></i>
+          <i></i>
         </div>
       </div>
 
