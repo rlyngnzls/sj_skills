@@ -31,9 +31,19 @@ Route::get('/aboutus_page', 'CourseController@aboutus') -> name('aboutus');
 
 //GALLERY
 Route::get('/skills_gallery_photo', 'GalleryController@skills_gallery_photo') -> name('gallery_photo');
-Auth::routes();
 
-Route::get('user/home', 'HomeController@userHome')->name('user.home');
+Route::group(['middleware' => 'prevent-back-history'],function(){
+  Auth::routes();
+  //USER
+  Route::get('user/home', 'Usr_DashboardController@userHome')->name('user.home');
 
+  //INSTRUCTOR
+  Route::get('instructor/home', 'Ins_DashboardController@instructorHome')->name('instructor.home');
 
-Route::get('admin/home', 'HomeController@adminHome')->name('admin.home')->middleware('is_admin');
+  //ADMINISTRATOR
+  Route::get('admin/home', 'Adm_DashboardController@adminHome')->name('admin.home')->middleware('is_admin');
+});
+
+Route::get('/sample', function () {
+  return view('auth.sample');
+});
