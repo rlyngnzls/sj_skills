@@ -35,7 +35,7 @@ class Adm_DashboardController extends Controller
     {
         return view('admin.adminHome');
     }
-  
+
 
 
 }
