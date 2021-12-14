@@ -147,22 +147,22 @@
           </div>
           <div class="row" style="padding:2%;">
             <div class="col-4" style="border-right: solid;">
-                <p style="text-align: left;">Gender</p>
+                <p style="text-align: left; font-weight:700;">Gender</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="gender" id="" required value="Male">
                   <label class="form-check-label" for="category1">Male</label>
-                </div>
+                </div> <br>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="gender" id="" required value="Female">
                   <label class="form-check-label" for="category1">Female</label>
                 </div>
             </div>
             <div class="col-4" style="border-right: solid;">
-                <p style="text-align: left;">Civil Status</p>
+                <p style="text-align: left; font-weight:700; ">Civil Status</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="CivStat" id="" required value="Single">
                   <label class="form-check-label" for="category1">Single</label>
-                </div>
+                </div><br>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="CivStat" id="" required value="Widow">
                   <label class="form-check-label" for="category1">Widow</label>
@@ -170,14 +170,14 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="CivStat" id="" required value="Married">
                   <label class="form-check-label" for="category1">Married</label>
-                </div>
+                </div><br>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="CivStat" id="" required value="Separated">
                   <label class="form-check-label" for="category1">Separated</label>
                 </div>
             </div>
             <div class="col-4">
-                <p style="text-align: left; ">Employment Status</p>
+                <p style="text-align: left; font-weight:700; ">Employment Status</p>
                 <div class="no" style="text-align: left;">
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="EmpStat" id="" required value="Employed">
@@ -209,7 +209,7 @@
           </div>
           <div class="row" style=" padding: 2%; padding-top: 0;">
             <div class="col-12">
-              <p style="text-align: left;">Birthdate</p>
+              <p style="text-align: left; font-weight:700;">Birthdate</p>
             </div>
             <div class="col-4">
               <select class="form-control" required name="monthfobirth">
@@ -241,7 +241,7 @@
 
           <div class="row" style="padding: 2%;">
             <div class="col-12">
-              <p style="text-align: left;">Birthplace</p>
+              <p style="text-align: left; font-weight:700; ">Birthplace</p>
             </div>
             <div class="col-4">
               <input type="text" class="form-control" placeholder="City/Municipality" required name="City/Municipality">
@@ -253,39 +253,40 @@
               <input type="text" class="form-control" placeholder="Region" required name="Region">
             </div>
           </div>
-          <div class="row" style="padding: 2%;">
+          <div class="row" style="padding: 2%; padding-bottom: 0%;">
             <div class="col-12">
-              <p style="text-align: left;">Educational Attainment</p>
+              <p style="text-align: left; font-weight:700;">Educational Attainment</p>
             </div>
+          </div>
             <div class="row" style=" border-bottom: solid;">
-              <div class="col-4" style="border-right: solid;">
+              <div class="col-4" style="border-right: solid; border-top:solid; border-left: solid;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="EducAttain" id="" required value="nogradecom">
                   <label class="form-check-label" for="category1">No Grade Completed</label>
                 </div>
               </div>
-              <div class="col-3" style="border-right: solid;">
+              <div class="col-4" style="border-right: solid; border-top:solid;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="EducAttain" id="" required value="elemgrad">
-                  <label class="form-check-label" for="category1">Elementary Graduate</label>
-                </div>
-              </div>
-              <div class="col-3" style="border-right: solid;">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="EducAttain" id="" required value="elemundergrad">
                   <label class="form-check-label" for="category1">Elementary Undergraduate</label>
                 </div>
               </div>
-              <div class="col-2">
+              <div class="col-4" style="border-right: solid; border-top:solid;">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="EducAttain" id="" required value="collegeundergrad">
-                  <label class="form-check-label" for="category1">College Undergraduate</label>
+                  <input class="form-check-input" type="radio" name="EducAttain" id="" required value="elemundergrad">
+                  <label class="form-check-label" for="category1">Elementary Graduate</label>
                 </div>
               </div>
             </div>
 
             <div class="row" style=" border-bottom: solid;">
-              <div class="col-4" style="border-right: solid;">
+              <div class="col-3" style="border-left: solid; border-right:solid;">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="EducAttain" id="" required value="collegeundergrad">
+                  <label class="form-check-label" for="category1">High School Undergraduate </label>
+                </div>
+              </div>
+              <div class="col-3" style="border-right: solid;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="EducAttain" id="" required value="hsgrad">
                   <label class="form-check-label" for="category1">High School Graduate</label>
@@ -294,315 +295,128 @@
               <div class="col-3" style="border-right: solid;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="EducAttain" id="" required value="hsundergrad">
-                  <label class="form-check-label" for="category1">High School Graduate Undergraduate</label>
+                  <label class="form-check-label" for="category1">College Graduate</label>
                 </div>
               </div>
               <div class="col-3" style="border-right: solid;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="EducAttain" id="" required value="collegegrad">
-                  <label class="form-check-label" for="category1">College Graduate</label>
+                  <label class="form-check-label" for="category1">College Undergraduate</label>
                 </div>
-              </div>
-              <div class="col-2">
-
               </div>
             </div>
 
-
-
               <div class="row" style="padding: 2%;">
                 <div class="col-6">
-                  <p style="text-align: left;">Mother's Name</p>
+                  <p style="text-align: left; font-weight:700;">Mother's Name</p>
                   <input type="text" class="form-control" placeholder="Mother's Name" required name="mothername">
                 </div>
                 <div class="col-6">
-                  <p style="text-align: left;">Father's Name</p>
+                  <p style="text-align: left; font-weight:700;">Father's Name</p>
                   <input type="text" class="form-control" placeholder="Father's Name" required name="fathername">
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-12">
-                    <h3 style="font-weight:600; font-size: 25px;">Learner/Trainee/Student (Clients) Classification</h3>
+                  <h3 style="font-weight:600; font-size: 25px;">Learner/Trainee/Student (Clients) Classification</h3>
+                </div>
               </div>
-                <div class="col-8" style="border-right: solid; border-bottom: solid;">
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Student">
-                      <label class="form-check-label" for="category1">Student</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Informal Worker">
-                      <label class="form-check-label" for="category1">Informal Worker</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Out-of-Student Youth">
-                      <label class="form-check-label" for="category1">Out-of-Student Youth</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Industry Worker">
-                      <label class="form-check-label" for="category1">Industry Worker</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4" style="border-bottom: solid;">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Indigenous People & Cultural Communities">
-                    <label class="form-check-label" for="category1">Indigenous People & Cultural Communities </label>
-                  </div>
-                </div>
 
-                <div class="col-8" style="border-right: solid; border-bottom: solid;">
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Solo Parent">
-                      <label class="form-check-label" for="category1">Solo Parent</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Cooperatives">
-                      <label class="form-check-label" for="category1">Cooperatives</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4" style="border-bottom: solid;">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Victims of Survivor of Human Trafficking">
-                    <label class="form-check-label" for="category1">Victims of Survivor of Human Trafficking </label>
-                  </div>
-                </div>
+              <div class="row" style="padding: 2%;">
+              <div class="col-6" >
+                <select class="form-control" required name="choose">
+                  <option disabled selected>Choose</option>
+                  <option value="Student">Student</option>
+                  <option value="Out-of-Student Youth">Out-of-Student Youth</option>
+                  <option value="Informal Worker">Informal Worker</option>
+                  <option value="Industry Worker">Industry Worker</option>
 
-                <div class="col-8" style="border-right: solid; border-bottom: solid;">
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Solo Parent's Children">
-                      <label class="form-check-label" for="category1">Solo Parent's Children</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value=">Family Enterprises">
-                      <label class="form-check-label" for="category1">Family Enterprises</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Uniformed Personnel">
-                      <label class="form-check-label" for="category1">Uniformed Personnel</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Family Members of Microentrepreneurs">
-                      <label class="form-check-label" for="category1">Family Members of Microentrepreneurs</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4" style="border-bottom: solid;" >
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Victims of Natural Disasters and
-                           Calamities">
-                    <label class="form-check-label" for="category1">Victims of Natural Disasters and
-                           Calamities
-                    </label>
-                  </div>
-                </div>
+                  <option value="Solo Parent">Solo Parent</option>
+                  <option value="Cooperatives">Cooperatives</option>
 
-              <div class="col-8" style="border-right: solid; border-bottom: solid;">
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Local Government Units (CTECs)">
-                      <label class="form-check-label" for="category1">Local Government Units (CTECs)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Farmers and Fishermen">
-                      <label class="form-check-label" for="category1">Farmers and Fishermen</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4" style="border-bottom: solid;">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Drug Dependent Surrenderers /
-                           Surrenderees">
-                    <label class="form-check-label" for="category1">Drug Dependent Surrenderers /
-                           Surrenderees
-                    </label>
-                  </div>
-                </div>
+                  <option value="Solo Parent's Children">Solo Parent's Children</option>
+                  <option value="Uniformed Personnel">Uniformed Personnel</option>
+                  <option value="Family Enterprises">Family Enterprises</option>
+                  <option value="Family Members of Microentrepreneurs">Family Members of Microentrepreneurs</option>
 
-                <div class="col-8" style="border-right: solid; border-bottom: solid;">
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Displaced HEIs Teaching Personnel">
-                      <label class="form-check-label" for="category1">Displaced HEIs Teaching Personnel</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Family Members of Farmers and Fishermen">
-                      <label class="form-check-label" for="category1">Family Members of Farmers and Fishermen</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Informal Settler">
-                      <label class="form-check-label" for="category1">Informal Settler</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4" style="border-bottom: solid;" >
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Rebel Returnees or Decommissioned
-                           Combatants">
-                    <label class="form-check-label" for="category1">Rebel Returnees or Decommissioned
-                           Combatants
-                    </label>
-                  </div>
-                </div>
+                  <option value="Local Government Units (CTECs)">Local Government Units (CTECs)</option>
+                  <option value="Farmers and Fishermen">Farmers and Fishermen</option>
 
-                <div class="col-8" style="border-right: solid; border-bottom: solid;">
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Displaced Workers">
-                      <label class="form-check-label" for="category1">Displaced Workers</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Currently Employed Workers ">
-                      <label class="form-check-label" for="category1">Currently Employed Workers</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Fisherfolks">
-                      <label class="form-check-label" for="category1">Fisherfolks</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Community Training & Employment Coordinator">
-                      <label class="form-check-label" for="category1">Community Training & Employment Coordinator </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4" style="border-bottom: solid;" >
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Inmates and Detainees">
-                    <label class="form-check-label" for="category1">Inmates and Detainees</label>
-                  </div>
-                </div>
+                  <option value="Displaced HEIs Teaching Personnel">Displaced HEIs Teaching Personnel</option>
+                  <option value="Family Members of Farmers and Fishermen">Family Members of Farmers and Fishermen</option>
+                  <option value="Informal Settler">Informal Settler</option>
+                  
+                  <option value="Displaced Workers">Displaced Workers</option>
+                  <option value="Fisherfolks">Fisherfolks</option>
+                  <option value="Currently Employed Workers">Currently Employed Workers</option>
+                  <option value="Community Training & Employment Coordinator">Community Training & Employment Coordinator</option>
 
-                <div class="col-8" style="border-right: solid; border-bottom: solid;">
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Employees w/ Contractual/Job Order
-                             Status">
-                      <label class="form-check-label" for="category1">Employees w/ Contractual/Job Order
-                             Status
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="4ps Beneficiary ">
-                      <label class="form-check-label" for="category1">4ps Beneficiary</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="TVET Trainers">
-                      <label class="form-check-label" for="category1">TVET Trainers</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Returning/repatriated OFWs">
-                      <label class="form-check-label" for="category1">Returning/repatriated OFWs </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4" style="border-bottom: solid;" >
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Wounded-in-Action AFP & PNP Personnel">
-                    <label class="form-check-label" for="category1">Wounded-in-Action AFP & PNP Personnel</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Family Members of AFP & PNP Wounded-
-                           in-Action">
-                    <label class="form-check-label" for="category1">Family Members of AFP & PNP Wounded-
-                           in-Action
-                    </label>
-                  </div>
-                </div>
+                  <option value="Employees w/ Contractual/Job Order Status ">Employees w/ Contractual/Job Order Status</option>
+                  <option value="TVET Trainers">TVET Trainers</option>
+                  <option value="4ps Beneficiary">4ps Beneficiary</option>
+                  <option value="Returning/repatriated OFWs">Returning/repatriated OFWs</option>
 
-                <div class="col-8" style="border-right: solid; border-bottom: solid;">
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Urban and Rural Poor">
-                      <label class="form-check-label" for="category1">Urban and Rural Poor</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="OFW Dependent">
-                      <label class="form-check-label" for="category1">OFW Dependent</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Agrarian Reform Beneficiary">
-                      <label class="form-check-label" for="category1">Agrarian Reform Beneficiary</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="MSMEs">
-                      <label class="form-check-label" for="category1">MSMEs</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4" style="border-bottom: solid;" >
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Family Members of Inmates and Detainees">
-                    <label class="form-check-label" for="category1">Family Members of Inmates and Detainees</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Uniformed Personnel">
-                    <label class="form-check-label" for="category1">Uniformed Personnel</label>
-                  </div>
-                </div>
+                  <option value="Urban and Rural Poor">Urban and Rural Poor</option>
+                  <option value="Agrarian Reform Beneficiary">Agrarian Reform Beneficiary</option>
+                  <option value="OFW Dependent">OFW Dependent</option>
+                  <option value="MSMEs">MSMEs</option>
 
-                <div class="col-8" style="border-right: solid;">
-                  <div class="col-12">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="RCEF - RESP">
-                      <label class="form-check-label" for="category1">RCEF - RESP</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Family Members of AFP & PNP Killed-in  Action">
-                      <label class="form-check-label" for="category1">Family Members of AFP & PNP Killed-in  Action</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
+                  <option value="RCEF - RESP">RCEF - RESP</option>
+                  <option value="Family Members of AFP & PNP Killed-in Action">Family Members of AFP & PNP Killed-in Action</option>
+                </select>
+              </div>
 
-                  </div>
+              <div class="col-6">
+                <select class="form-control" required name="choose">
+                  <option disabled selected>Choose</option>
+                  <option value="Indigenous People & Cultural Communities">Indigenous People & Cultural Communities</option>
+                  <option value="Victims of Survivor of Human Trafficking">Victims of Survivor of Human Trafficking</option>
+                  <option value="Victims of Natural Disasters and Calamities">Victims of Natural Disasters and Calamities</option>
+                  <option value="Drug Dependent Surrenderers / Surrenderees">Drug Dependent Surrenderers / Surrenderees</option>
+                  <option value="Rebel Returnees or Decommissioned Combatants">Rebel Returnees or Decommissioned Combatants</option>
+                  <option value="Inmates and Detainees">Inmates and Detainees</option>
+                  <option value="Wounded-in-Action AFP & PNP Personnel">Wounded-in-Action AFP & PNP Personnel</option>
+                  <option value="Family Members of AFP & PNP Wounded- in-Action">Family Members of AFP & PNP Wounded- in-Action</option>
+                  <option value="Family Members of Inmates and Detainees">Family Members of Inmates and Detainees</option>
+                  <option value="Uniformed Personnel">Uniformed Personnel</option>
+                  <option value="Victims of Human Rights or their Authorized Beneficiaries">Victims of Human Rights or their Authorized Beneficiaries</option>            
+                </select>
+              </div>
+              </div>
+
+              <br>
+
+              <div class="row">
+                <div class="col-12">
+                  <h3 style="font-weight:600; font-size: 25px;">5. Type of Disability (for Persons with Disability Only): <span style="color:black; font-style: italic;">To be filled up by the TESDA personnel</span></h3>
                 </div>
-                <div class="col-4">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="ClientClass" id="" required value="Victims of Human Rights or their
-                           Authorized Beneficiaries">
-                    <label class="form-check-label" for="category1">Victims of Human Rights or their
-                           Authorized Beneficiaries
-                    </label>
+              </div>
+
+              <div>
+                <div class="row">
+                  <div class="col-4">
+                    <button class="button button1">Mental/Intellectual</button>
                   </div>
                 </div>
               </div>
 
+            <br>
 
             <div class="row">
-              <div class="col-12" style=" border-bottom: solid; padding: 5px;">
-                <h4 style="color:blue; text-align: left; font-weight:900;">5. Type of Disability (for Persons with Disability Only): <span style="color:black; font-style: italic;">To be filled up by the TESDA personnel</span></h4>
-              </div>
-            </div>
-
-            <div class="row" style=" border-bottom: solid;">
-              <div class="col-4" style=" border-right: solid;">
+              <div class="col-4"  style="border-right: solid; border-bottom: solid; border-top: solid; padding: 1%;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="TOD" id="" required value="Mental/Intellectual">
                   <label class="form-check-label" for="category1">Mental/Intellectual</label>
                 </div>
               </div>
-              <div class="col-4"  style=" border-right: solid;">
+              <div class="col-4" style="border-right: solid; border-bottom: solid; border-top: solid; padding: 1%;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="TOD" id="" required value="Visual Disability">
                   <label class="form-check-label" for="category1">Visual Disability</label>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-4" style="border-bottom: solid; border-top: solid; padding: 1%;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="TOD" id="" required value="Orthopedic (Musculoskeletal) Disability">
                   <label class="form-check-label" for="category1">Orthopedic (Musculoskeletal) Disability</label>
@@ -610,41 +424,41 @@
               </div>
             </div>
 
-            <div class="row" style=" border-bottom: solid;">
-              <div class="col-4" style=" border-right: solid;">
+            <div class="row">
+              <div class="col-4"  style="border-right: solid; padding: 1%; ">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="TOD" id="" required value="Hearing Disability">
                   <label class="form-check-label" for="category1">Hearing Disability</label>
                 </div>
               </div>
-              <div class="col-4"  style=" border-right: solid;">
+              <div class="col-4"  style="border-right: solid; padding: 1%;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="TOD" id="" required value="Speech Impairment">
                   <label class="form-check-label" for="category1">Speech Impairment</label>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-4" style="padding: 1%;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="TOD" id="" required value="Multiple Disabilities">
-                  <label class="form-check-label" for="category1">Multiple Disabilities, specify  ____________</label>
+                  <label class="form-check-label" for="category1">Multiple Disabilities, <input type="text" class="form-control" placeholder="Specify" required name="Specify">  </label>
                 </div>
               </div>
             </div>
-
-            <div class="row" style=" border-bottom: solid;">
-            <div class="col-4" style=" border-right: solid;">
+            
+            <div class="row">
+            <div class="col-4"  style="border-right: solid; border-top: solid; border-bottom: solid; padding: 1%;">
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="TOD" id="" required value="Psychosocial Disability">
                 <label class="form-check-label" for="category1">Psychosocial Disability</label>
               </div>
             </div>
-            <div class="col-4"  style=" border-right: solid;">
+            <div class="col-4"  style="border-right: solid; border-top: solid; border-bottom: solid; padding: 1%;">
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="TOD" id="" required value=">Disability Due to Chronic Illness">
                 <label class="form-check-label" for="category1">Disability Due to Chronic Illness</label>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4" style="border-bottom: solid; border-top: solid; border-bottom: solid; padding: 1%;">
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="TOD" id="" required value="learning">
                 <label class="form-check-label" for="category1">Learning Disability</label>
