@@ -259,7 +259,7 @@
             </div>
           </div>
             <div class="row" style=" border-bottom: solid;">
-              <div class="col-4" style="border-right: solid; border-top:solid; border-left: solid;">
+              <div class="col-4" style="border-right: solid; border-top:solid; ">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="EducAttain" id="" required value="nogradecom">
                   <label class="form-check-label" for="category1">No Grade Completed</label>
@@ -271,7 +271,7 @@
                   <label class="form-check-label" for="category1">Elementary Undergraduate</label>
                 </div>
               </div>
-              <div class="col-4" style="border-right: solid; border-top:solid;">
+              <div class="col-4" style="border-top:solid;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="EducAttain" id="" required value="elemundergrad">
                   <label class="form-check-label" for="category1">Elementary Graduate</label>
@@ -280,7 +280,7 @@
             </div>
 
             <div class="row" style=" border-bottom: solid;">
-              <div class="col-3" style="border-left: solid; border-right:solid;">
+              <div class="col-3" style="border-right:solid;">
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="EducAttain" id="" required value="collegeundergrad">
                   <label class="form-check-label" for="category1">High School Undergraduate </label>
@@ -346,7 +346,7 @@
                   <option value="Displaced HEIs Teaching Personnel">Displaced HEIs Teaching Personnel</option>
                   <option value="Family Members of Farmers and Fishermen">Family Members of Farmers and Fishermen</option>
                   <option value="Informal Settler">Informal Settler</option>
-                  
+
                   <option value="Displaced Workers">Displaced Workers</option>
                   <option value="Fisherfolks">Fisherfolks</option>
                   <option value="Currently Employed Workers">Currently Employed Workers</option>
@@ -380,7 +380,7 @@
                   <option value="Family Members of AFP & PNP Wounded- in-Action">Family Members of AFP & PNP Wounded- in-Action</option>
                   <option value="Family Members of Inmates and Detainees">Family Members of Inmates and Detainees</option>
                   <option value="Uniformed Personnel">Uniformed Personnel</option>
-                  <option value="Victims of Human Rights or their Authorized Beneficiaries">Victims of Human Rights or their Authorized Beneficiaries</option>            
+                  <option value="Victims of Human Rights or their Authorized Beneficiaries">Victims of Human Rights or their Authorized Beneficiaries</option>
                 </select>
               </div>
               </div>
@@ -389,19 +389,13 @@
 
               <div class="row">
                 <div class="col-12">
-                  <h3 style="font-weight:600; font-size: 25px;">5. Type of Disability (for Persons with Disability Only): <span style="color:black; font-style: italic;">To be filled up by the TESDA personnel</span></h3>
+                  <h3 style="font-weight:600; font-size: 25px;">Type of Disability (for Persons with Disability Only):<span style="font-size: 25px; color:black; font-style: italic;">To be filled up by the TESDA personnel</span></h3>
                 </div>
               </div>
 
               <div>
-                <div class="row">
-                  <div class="col-4">
-                    <button class="button button1">Mental/Intellectual</button>
-                  </div>
-                </div>
-              </div>
+            </div>
 
-            <br>
 
             <div class="row">
               <div class="col-4"  style="border-right: solid; border-bottom: solid; border-top: solid; padding: 1%;">
@@ -444,7 +438,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="row">
             <div class="col-4"  style="border-right: solid; border-top: solid; border-bottom: solid; padding: 1%;">
               <div class="form-check form-check-inline">
@@ -466,13 +460,13 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12" style=" border-bottom: solid; padding: 5px;">
-              <h4 style="color:blue; text-align: left; font-weight:900;">6. Causes of Disability (for Persons with Disability Only)</h4>
+          <div class="row" style="padding: 2%; padding-bottom: 0;">
+            <div class="col-12">
+              <h3 style="font-weight:600; font-size: 25px;">Causes of Disability (for Persons with Disability Only)</h3>
             </div>
           </div>
 
-          <div class="row" style=" border-bottom: solid;">
+          <div class="row" style=" border-bottom: solid; border-top: solid;">
             <div class="col-4" style=" border-right: solid;">
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="COD" id="" required value="congeinborn">
@@ -493,42 +487,61 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-8" style=" border-bottom: solid; padding: 5px; border-right: solid;">
-              <h4 style="color:blue; text-align: left; font-weight:900;">7. Taken NCAE/YP4SC Before?</h4>
+          <div class="row" style="padding: 2%;">
+            <div class="col-12">
+              <h3 style="font-weight:600; font-size: 25px;">Taken NCAE/YP4SC Before?</h3>
             </div>
-            <div class="col-2" style=" border-bottom: solid; padding: 5px; border-right: solid;">
+            <div class="col-2">
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="NCAE" id="" required value="YES">
                 <label class="form-check-label" for="category1">Yes</label>
               </div>
             </div>
-            <div class="col-2" style=" border-bottom: solid; padding: 5px;">
+            <div class="col-2">
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="NCAE" id="" required value="NO">
                 <label class="form-check-label" for="category1">No</label>
               </div>
             </div>
-          </div>
-          <br>
-          <div class="row" style=" border-bottom: solid;">
-            <div class="col-8">
-              <input type="text" class="form-control" placeholder="When:" required name="when"><br>
-              <input type="text" class="form-control" placeholder="Where:" required name="where"><br>
+            <div class="col-4">
+              <input type="text" class="form-control" placeholder="When:" required name="when">
+            </div>
+            <div class="col-4">
+              <input type="text" class="form-control" placeholder="Where:" required name="where">
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12" style=" border-bottom: solid; padding: 5px;">
-              <h4 style="color:blue; text-align: left; font-weight:900;">8. Name of Course/Qualification</h4>
+
+          <div class="row" style="padding: 2%;">
+            <div class="col-5">
+              <h3 style="font-weight:600; font-size: 25px;">Name of Course/Qualification</h3>
+              <select class="form-control" required name="courelist">
+                <option disabled selected>Choose Course</option>
+                <option value="West Crame">West Crame</option>
+                <option value=">GreenHills<">GreenHills</option>
+                <option value="Onse">Onse</option>
+                <option value="Tibagan">Tibagan</option>
+                <option value="Little Baguio">Little Baguio</option>
+                <option value="Addition Hills">Addition Hills</option>
+                <option value="Maytunas">Maytunas</option>
+                <option value="Sta. Lucia">Sta. Lucia</option>
+                <option value="Kabayanan">Kabayanan</option>
+                <option value="St. Joseph">St. Joseph</option>
+                <option value="Isabelita">Isabelita</option>
+                <option value="Pasadena">Pasadena</option>
+                <option value="Corazon De Jesus">Corazon De Jesus</option>
+                <option value="Batis">Batis</option>
+                <option value="San Perfecto">San Perfecto</option>
+                <option value="Pedro Cruz">Pedro Cruz</option>
+                <option value="Progreso">Progreso</option>
+                <option value="Rivera">Rivera</option>
+                <option value="Balong-Bato">Balong-Bato</option>
+                <option value="Ermintaño">Ermintaño</option>
+                <option value="Salapan">Salapan</option>
+              </select>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12" style=" border-bottom: solid; padding: 5px;">
-              <h4 style="color:blue; text-align: left; font-weight:900;">9. If  Scholar, What Type of Scholarship Package <span style="color:black;">(TWSP, PESFA, STEP, others?)</span> </h4>
-            </div>
-          </div>
 
           <div class="row">
             <div class="col-12" style=" border-bottom: solid; padding: 5px;">
