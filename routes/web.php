@@ -42,6 +42,10 @@ Route::group(['middleware' => 'prevent-back-history'],function(){
 
   //ADMINISTRATOR
   Route::get('admin/home', 'Adm_DashboardController@adminHome')->name('admin.home')->middleware('is_admin');
+
+    //Announcements
+    Route::get('/adm_announcements_list', 'Adm_AnnouncementsController@index')->name('admin.announcements.announcements_list');
+    Route::resource('/adm_announcements', 'Adm_AnnouncementsController');
 });
 
 Route::get('/sample', function () {

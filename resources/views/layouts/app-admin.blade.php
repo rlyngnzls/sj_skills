@@ -1,80 +1,209 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
+ <!DOCTYPE html>
+ <html>
+ 
+ <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>Administrator</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Skills - Administrator</title>
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Icons -->
+    <link rel="stylesheet" href="{{asset('vendor/nucleo/css/nucleo.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('vendor/@fortawesome/fontawesome-free/css/all.min.css')}}" type="text/css">
+      <!-- Page plugins -->
+  <link rel="stylesheet" href="{{asset('vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css')}}">
+  <link rel="stylesheet" href="{{asset('vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css')}}">
+  <link rel="stylesheet" href="{{asset('vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css')}}">
+    <!-- Argon CSS -->
+    <link rel="stylesheet" href="{{asset('css/argon.css')}}" type="text/css">
+ </head>
+ 
+ <body>
+    <!-- Sidenav -->
+   <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header d-flex align-items-center">
+        <a class="navbar-brand" href="../../pages/dashboards/dashboard.html">
+          <img src="{{asset('img/brand/blue.png')}}" class="navbar-brand-img" alt="...">
+        </a>
+        <div class="ml-auto">
+          <!-- Sidenav toggler -->
+          <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin" data-target="#sidenav-main">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
             </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('admin.home')}}">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <span class="nav-link-text">Dashboard</span>
+                </a>
+            </li>
+          </ul>
+          <!-- Divider -->
+          <hr class="my-3">
+          <!-- Heading -->
+          <h6 class="navbar-heading p-0 text-muted">Interface</h6>
+          <!-- Navigation -->
+          <ul class="navbar-nav mb-md-3">
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('admin.announcements.announcements_list')}}">
+                <i class="fas fa-bell"></i>
+                <span class="nav-link-text">Announcements</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-newspaper"></i>
+                <span class="nav-link-text">Articles</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Divider -->
+          <hr class="my-3">
+          <!-- Heading -->
+          <h6 class="navbar-heading p-0 text-muted">System</h6>
+          <!-- Navigation -->
+          <ul class="navbar-nav mb-md-3">
+            <li class="nav-item">
+                <a class="nav-link" href="#navbar-components" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-components">
+                  <i class="fas fa-users"></i>
+                  <span class="nav-link-text">Registrants</span>
+                </a>
+                <div class="collapse" id="navbar-components">
+                  <ul class="nav nav-sm flex-column">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Pending</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Approved</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Rejected</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-university"></i>
+                <span class="nav-link-text">Class Management</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-</body>
-</html>
+  </nav>
+   <!-- Main content -->
+   <div class="main-content" id="panel">
+     <!-- Topnav -->
+     <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+       <div class="container-fluid">
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <!-- Navbar links -->
+           <ul class="navbar-nav align-items-center ml-md-auto">
+             <li class="nav-item d-xl-none">
+               <!-- Sidenav toggler -->
+               <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                 <div class="sidenav-toggler-inner">
+                   <i class="sidenav-toggler-line"></i>
+                   <i class="sidenav-toggler-line"></i>
+                   <i class="sidenav-toggler-line"></i>
+                 </div>
+               </div>
+             </li>
+           </ul>
+           <ul class="navbar-nav align-items-center ml-auto ml-md-0">
+             <li class="nav-item dropdown">
+               <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <div class="media align-items-center">
+                   <span class="avatar avatar-sm rounded-circle">
+                     <img alt="Image placeholder" src="{{asset('img/theme/team-4.jpg')}}">
+                   </span>
+                   <div class="media-body ml-2 d-none d-lg-block">
+                     <span class="mb-0 text-sm  font-weight-bold">{{ Auth::user()->name }}</span>
+                   </div>
+                 </div>
+               </a>
+               <div class="dropdown-menu dropdown-menu-right">
+                 <div class="dropdown-header noti-title">
+                   <h6 class="text-overflow m-0">Welcome</h6>
+                 </div>
+                 <a href="#!" class="dropdown-item">
+                   <i class="ni ni-single-02"></i>
+                   <span>My Profile</span>
+                 </a>               
+                 <div class="dropdown-divider"></div>
+                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                   <i class="ni ni-user-run"></i>
+                   <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    {{ csrf_field() }}
+                   </form>
+                   <span>Logout</span>
+                 </a>
+               </div>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+      <!-- Page content -->
+      @yield('content')
+
+         <!-- Footer -->
+         <footer class="footer pt-0">
+            <div class="row align-items-center justify-content-lg-between">
+              <div class="col-lg-6">
+                <div class="copyright text-center text-lg-left text-muted">
+                  &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">City Government of San Juan</a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" target="_blank">San Juan Skills Training Center</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+     </div>
+   </div>
+   <!-- Argon Scripts -->
+   <!-- Core -->
+   <script src="{{asset('vendor/jquery/dist/jquery.min.js')}}"></script>
+   <script src="{{asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+   <script src="{{asset('vendor/js-cookie/js.cookie.js')}}"></script>
+   <script src="{{asset('vendor/jquery.scrollbar/jquery.scrollbar.min.js')}}"></script>
+   <script src="{{asset('vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js')}}"></script>
+   <!-- Optional JS -->
+   <script src="{{asset('vendor/chart.js/dist/Chart.min.js')}}"></script>
+   <script src="{{asset('vendor/chart.js/dist/Chart.extension.js')}}"></script>
+   <!-- Optional JS -->
+  <script src="{{asset('vendor/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+  <script src="{{asset('vendor/datatables.net-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
+  <script src="{{asset('vendor/datatables.net-buttons/js/dataTables.buttons.min.js')}}"></script>
+  <script src="{{asset('vendor/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js')}}"></script>
+  <script src="{{asset('vendor/datatables.net-buttons/js/buttons.html5.min.js')}}"></script>
+  <script src="{{asset('vendor/datatables.net-buttons/js/buttons.flash.min.js')}}"></script>
+  <script src="{{asset('vendor/datatables.net-buttons/js/buttons.print.min.js')}}"></script>
+  <script src="{{asset('vendor/datatables.net-select/js/dataTables.select.min.js')}}"></script>
+   <!-- Argon JS -->
+   <script src="{{asset('js/argon.js')}}"></script>
+   <!-- Demo JS - remove this in your project -->
+   <script src="{{asset('js/demo.min.js')}}"></script>
+ </body>
+ 
+ </html>
