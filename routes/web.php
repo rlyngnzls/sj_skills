@@ -45,6 +45,7 @@ Route::group(['middleware' => 'prevent-back-history'],function(){
 
     //Announcements
     Route::get('/adm_announcements_list', 'Adm_AnnouncementsController@index')->name('admin.announcements.announcements_list');
+    Route::get('/adm_announcement_unpublish/{id}', 'Adm_AnnouncementsController@unpublish')->name('admin.announcements.announcements_unpublish');
     Route::resource('/adm_announcements', 'Adm_AnnouncementsController');
 });
 

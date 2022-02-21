@@ -3,6 +3,7 @@
 @section('content')
 <!-- Header -->
   <!-- Header -->
+  
   <div class="header bg-primary pb-6">
     <div class="container-fluid">
       <div class="header-body">
@@ -11,9 +12,20 @@
             <h6 class="h2 text-white d-inline-block mb-0">ANNOUNCEMENTS</h6>
           </div>
           <div class="col-lg-6 col-5 text-right">
-            <a href="#" class="btn btn-success"><i class="fas fa-plus fa-fw"></i> Announcements</a>
+            <a href="{{action('Adm_AnnouncementsController@create')}}" class="btn btn-success"><i class="fas fa-plus fa-fw"></i> Announcements</a>
           </div>
         </div>
+
+        @if(\Session::has('success'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <span class="alert-icon"><i class="ni ni-check-bold"></i></span>
+          <span class="alert-text"><strong>Success!</strong> {{ \Session::get('success')}}</span>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      @endif
+
         <!-- Card stats -->
         <div class="row">
             <div class="col-xl-4 col-md-6">
@@ -83,6 +95,7 @@
       </div>
     </div>
   </div>
+  
   <!-- Page content -->
   <div class="container-fluid mt--6">
     <div class="row">
@@ -90,6 +103,7 @@
         <div class="row">
           <div class="col">
             <div class="card">
+              
                 <!-- Card header -->
                 <div class="card-header">
                   <h3 class="mb-0">Announcements List</h3>
@@ -99,6 +113,7 @@
                     <thead class="thead-light">
                       <tr>
                         <th>No.</th>
+                        <th>Title</th>
                         <th>Title</th>
                         <th>Tag</th>
                         <th>Created At</th>
@@ -110,21 +125,27 @@
                       @foreach ($Announcements as $row)
                       <tr>
                         <td>{{$row->id}}</td>
+                        <td><img src="{{asset("storage/" . $row->filename) }}" alt="{{$row->filename}}" class="img-thumbnail" width="50%;"></td>
                         <td>{{$row->title}}</td>
                         <td>{{$row->tag}}</td>
                         
                         <td>{{date('F j, Y - h:i A', strtotime($row -> created_at))}}</td>
                         <td>{{date('F j, Y - h:i A', strtotime($row -> updated_at))}}</td>
                         <td>
-                          <button class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#modal-contents">View Contents</button>
-                          <button class="btn btn-info btn-sm btn-block" data-toggle="modal" data-target="#modal-contents">Edit</button>
-                          <button class="btn btn-danger btn-sm btn-block" data-toggle="modal" data-target="#modal-tag">Unpublish</button>
+                          <button class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#modal-contents{{$row->id}}">View Contents</button>
+                          <a class="btn btn-info btn-sm btn-block" href="{{action('Adm_AnnouncementsController@edit', $row->id)}}">Edit</a>
+                          @if ($row->tag == 'Unpublish')
+                          <button class="btn btn-primary btn-sm btn-block" data-toggle="modal" data-target="#modal-tag-pub{{$row->id}}">Publish</button>
+                          @else
+                          <button class="btn btn-danger btn-sm btn-block" data-toggle="modal" data-target="#modal-tag-unpub{{$row->id}}">Unpublish</button>
+                          @endif
+                         
                         </td>
                         
                       </tr>
 
                       {{-- Contents Modal --}}
-                      <div class="modal fade" id="modal-contents" tabindex="-1" role="dialog" aria-labelledby="modal-contents" aria-hidden="true">
+                      <div class="modal fade" id="modal-contents{{$row->id}}" tabindex="-1" role="dialog" aria-labelledby="modal-contents" aria-hidden="true">
                         <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -135,7 +156,7 @@
                             </div>
                             <div class="modal-body">
                                 <small><em class="text-muted">Date Created - {{date('F j, Y - h:i A', strtotime($row -> created_at))}}</em></small>
-                                <p class="text-justify mt-3">{{$row->contents}}</p>
+                                <div class="text-justify mt-3">{!! $row->contents !!}</div>
                                 <small><em class="text-muted">Last Updated - {{date('F j, Y - h:i A', strtotime($row -> updated_at))}}</em class="text-muted"></small>
                             </div>
                             <div class="modal-footer">
@@ -146,15 +167,18 @@
                       </div>
 
                       {{-- Tag Modal --}}
-                      <div class="modal fade" id="modal-tag" tabindex="-1" role="dialog" aria-labelledby="modal-tag" aria-hidden="true">
+                      <div class="modal fade" id="modal-tag-pub{{$row->id}}" tabindex="-1" role="dialog" aria-labelledby="modal-tag" aria-hidden="true">
                         <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
-                            <div class="modal-content bg-gradient-danger">
+                            <div class="modal-content bg-gradient-primary">
                                 <div class="modal-header">
                                     <h6 class="modal-title" id="modal-title-notification">ATTENTION</h6>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
                                 </div>
+                                <form method="post" action="{{action('Adm_AnnouncementsController@destroy',$row->id)}}" >
+                                  {{csrf_field()}}
+                                  <input type="hidden" name="_method" value="DELETE">
                                 <div class="modal-body">
                                     <div class="py-3">
                                       <div class=" text-center">
@@ -171,12 +195,59 @@
                                           <dd class="col-sm-8 mt-3">{{date('F j, Y - h:i A', strtotime($row -> updated_at))}}</dd>
                                         </dl>
                                       </div>
+                                      <div class="text-center">
+                                        <h4 class="heading mt-4">Are you sure you want to proceed?</h4>
+                                      </div>
                                     </div> 
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-white">Yes, Im sure</button>
+                                    <button type="submit" class="btn btn-white">Yes, I'm sure</button>
                                     <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal">Close</button>
                                 </div>
+                              </form>
+                            </div>
+                        </div>
+                      </div>
+
+                      {{-- Tag Modal --}}
+                      <div class="modal fade" id="modal-tag-unpub{{$row->id}}" tabindex="-1" role="dialog" aria-labelledby="modal-tag" aria-hidden="true">
+                        <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                            <div class="modal-content bg-gradient-danger">
+                                <div class="modal-header">
+                                    <h6 class="modal-title" id="modal-title-notification">ATTENTION</h6>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <form method="post" action="{{action('Adm_AnnouncementsController@unpublish',$row->id)}}" >
+                                  {{csrf_field()}}
+                                  <input type="hidden" name="_method" value="GET">
+                                <div class="modal-body">
+                                    <div class="py-3">
+                                      <div class=" text-center">
+                                        <i class="ni ni-bell-55 ni-3x"></i>
+                                        <h4 class="heading mt-4">The following announcement will be tag as "Unpublish" and will not be available to view by anyone.</h4>
+                                      </div>
+                                      <div class="col-md-12">
+                                        <dl class="row mt-3">
+                                          <dt class="col-sm-4">Title</dt>
+                                          <dd class="col-sm-8">{{$row->title}}</dd>
+                                          <dt class="col-sm-4 mt-3">Date Created</dt>
+                                          <dd class="col-sm-8 mt-3">{{date('F j, Y - h:i A', strtotime($row -> created_at))}}</dd>
+                                          <dt class="col-sm-4 mt-3">Last Updated</dt>
+                                          <dd class="col-sm-8 mt-3">{{date('F j, Y - h:i A', strtotime($row -> updated_at))}}</dd>
+                                        </dl>
+                                      </div>
+                                      <div class="text-center">
+                                        <h4 class="heading mt-4">Are you sure you want to proceed?</h4>
+                                      </div>
+                                    </div> 
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-white">Yes, I'm sure</button>
+                                    <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal">Close</button>
+                                </div>
+                              </form>
                             </div>
                         </div>
                       </div>
